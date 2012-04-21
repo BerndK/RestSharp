@@ -144,12 +144,13 @@ namespace RestSharp.Deserializers
 				// check for nullable and extract underlying type
 				if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>))
 				{
-					type = type.GetGenericArguments()[0];
-
-					if (string.IsNullOrEmpty(value.ToString()))
-					{
-						continue;
-					}
+                    // if the value is empty, set the property to null...
+                    if (value == null || String.IsNullOrEmpty(value.ToString()))
+                    {
+                        prop.SetValue(x, null, null);
+                        continue;
+                    }
+                    type = type.GetGenericArguments()[0];
 				}
 
 				if (type == typeof(bool))
@@ -296,8 +297,21 @@ namespace RestSharp.Deserializers
 
 		private object CreateAndMap(Type t, XElement element)
 		{
-			var item = Activator.CreateInstance(t);
-			Map(item, element);
+			object item;
+			if (t == typeof(String))
+			{
+				item = element.Value;
+			}
+			else if (t.IsPrimitive)
+			{
+				item = element.Value.ChangeType(t, Culture);
+			}
+			else
+			{
+				item = Activator.CreateInstance(t);
+				Map(item, element);
+			}
+
 			return item;
 		}
 
