@@ -5,4 +5,5 @@
 	<image-large src="2.gif">value2</image-large>
 	<image-large src="3.gif">value3</image-large>
 	<image-large src="4.gif">value4</image-large>
+  <ListName />
 </InlineListSample>

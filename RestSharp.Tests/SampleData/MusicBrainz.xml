@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://musicbrainz.org/ns/mmd-2.0#">
+  <release id="7a052a69-e691-402d-be63-1b1dc058a046">
+    <title>Michael Flatley's Riverdance II</title>
+    <status>Official</status>
+    <quality>normal</quality>
+    <text-representation>
+      <language>eng</language>
+      <script>Latn</script>
+    </text-representation>
+    <artist-credit>
+      <name-credit>
+        <artist id="31321410-37c0-442c-aec0-0611ca43ba15">
+          <name>Ronan Hardiman</name>
+          <sort-name>Hardiman, Ronan</sort-name>
+        </artist>
+      </name-credit>
+    </artist-credit>
+    <release-group type="Soundtrack" id="a0494e3a-9c2e-3f96-ba71-f89f0a50979c">
+      <title>Michael Flatley's Riverdance II</title>
+      <first-release-date />
+    </release-group>
+    <label-info-list count="0" />
+    <medium-list count="1">
+      <medium>
+        <position>1</position>
+        <track-list count="19" offset="0">
+          <track>
+            <position>1</position>
+            <length>244506</length>
+            <recording id="c6b77a2c-dc81-45d1-bd98-3e9bbb35cc27">
+              <title>Lord of the Dance / Earthjig Reprise</title>
+              <length>244506</length>
+            </recording>
+          </track>
+          <track>
+            <position>2</position>
+            <length>339973</length>
+            <recording id="f3b5f5cc-503e-4707-8bda-40c7c4dda0b0">
+              <title>The Countess Gathleen / Women of the Sidhe</title>
+              <length>339973</length>
+            </recording>
+          </track>
+          <track>
+            <position>3</position>
+            <length>217573</length>
+            <recording id="e6d2ba62-8dba-4f42-bdc5-f3f5c14d53cf">
+              <title>Shivna</title>
+              <length>217573</length>
+            </recording>
+          </track>
+          <track>
+            <position>4</position>
+            <length>214706</length>
+            <recording id="19a32e44-9d31-4254-8dd6-791b6bb7574e">
+              <title>The Landlord's Walk</title>
+              <length>214706</length>
+            </recording>
+          </track>
+          <track>
+            <position>5</position>
+            <length>515160</length>
+            <recording id="fe9df8e0-8223-41ce-a63b-b39a4e56c942">
+              <title>Reel Around the Sun</title>
+              <length>515160</length>
+            </recording>
+          </track>
+          <track>
+            <position>6</position>
+            <length>246866</length>
+            <recording id="0d665398-ccf1-4672-a9ea-e6c60afabf18">
+              <title>Caoineadh Cu Chulainn (Lament)</title>
+              <length>246866</length>
+            </recording>
+          </track>
+          <track>
+            <position>7</position>
+            <length>128573</length>
+            <recording id="1513b0e0-7233-4f63-9551-0c7363da8c9e">
+              <title>Gypsy</title>
+              <length>131173</length>
+            </recording>
+          </track>
+          <track>
+            <position>8</position>
+            <length>225266</length>
+            <recording id="5d906b7b-7487-4a52-b8a5-dc41810dfc9c">
+              <title>Slip Into Spring</title>
+              <length>225266</length>
+            </recording>
+          </track>
+          <track>
+            <position>9</position>
+            <length>279866</length>
+            <recording id="d5062f09-dc6f-4c2c-88dd-f0d347b98e63">
+              <title>Mairead Nan Cuiread</title>
+              <length>279866</length>
+            </recording>
+          </track>
+          <track>
+            <position>10</position>
+            <length>343066</length>
+            <recording id="679065f7-1b0b-4a27-8f56-0760b5cef18c">
+              <title>Riverdance</title>
+              <length>343066</length>
+            </recording>
+          </track>
+          <track>
+            <position>11</position>
+            <length>187386</length>
+            <recording id="c3fe9002-518e-44c1-9a4a-97ff16ccb022">
+              <title>American Wake (The Nova Scotia Set)</title>
+              <length>187386</length>
+            </recording>
+          </track>
+          <track>
+            <position>12</position>
+            <length>267973</length>
+            <recording id="d56358e6-e8d6-4a2f-a52c-849468546cbe">
+              <title>Siamsa</title>
+              <length>269800</length>
+            </recording>
+          </track>
+          <track>
+            <position>13</position>
+            <length>299826</length>
+            <recording id="1f47ade0-d13d-4f6f-9680-707d6c9befde">
+              <title>Lift the Wing</title>
+              <length>299826</length>
+            </recording>
+          </track>
+          <track>
+            <position>14</position>
+            <length>207320</length>
+            <recording id="d97efe3d-cec2-4351-b92c-48762f979d65">
+              <title>Stolen Kiss</title>
+              <length>207666</length>
+            </recording>
+          </track>
+          <track>
+            <position>15</position>
+            <length>177013</length>
+            <recording id="268b7ede-993b-410c-8e5f-a2b832f9f506">
+              <title>Macedonian Morning</title>
+              <length>177013</length>
+            </recording>
+          </track>
+          <track>
+            <position>16</position>
+            <length>227013</length>
+            <recording id="bac33cb9-c2f6-4496-85c7-58e56b3a261f">
+              <title>Breakout</title>
+              <length>227013</length>
+            </recording>
+          </track>
+          <track>
+            <position>17</position>
+            <length>260946</length>
+            <recording id="1c03ab7a-1628-4119-b051-af4566f6f251">
+              <title>Andalucia</title>
+              <length>260946</length>
+            </recording>
+          </track>
+          <track>
+            <position>18</position>
+            <length>195600</length>
+            <recording id="bff2a315-b6be-49c5-bb25-afd64fd929ca">
+              <title>Soul a Ruin</title>
+              <length>195600</length>
+            </recording>
+          </track>
+          <track>
+            <position>19</position>
+            <length>224360</length>
+            <recording id="21e944b3-55b7-43f0-8e01-956266f4e2ae">
+              <title>Riverdance Remix</title>
+              <length>224360</length>
+            </recording>
+          </track>
+        </track-list>
+      </medium>
+    </medium-list>
+  </release>
+</metadata>

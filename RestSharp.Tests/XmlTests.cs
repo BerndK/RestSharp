@@ -145,6 +145,19 @@ namespace RestSharp.Tests
         }
 
         [Fact]
+        public void Can_Deserialize_Parentless_aka_Inline_List_Items_Without_Matching_Class_Name_Using_XmlDeserializer()
+        {
+            var xmlpath = PathFor("InlineListAttrSample.xml");
+            var doc = XDocument.Load(xmlpath);
+
+            var xml = new XmlDeserializer();
+            var output = xml.Deserialize<InlineListSample2>(new RestResponse { Content = doc.ToString() });
+
+            Assert.NotEmpty(output.Images);
+            Assert.Equal(4, output.Images.Count);
+        }
+
+        [Fact]
 		public void Can_Deserialize_Parentless_aka_Inline_List_Items_With_Matching_Class_Name()
 		{
 			var xmlpath = PathFor("InlineListSample.xml");
@@ -567,6 +580,17 @@ namespace RestSharp.Tests
 
             var d = new XmlDeserializer();
             var output = d.Deserialize<MTB.Worker.AcoustID.Response>(response);
+
+        }
+        [Fact]
+        public void Can_Deserialize_MusicBrainz_Xml()
+        {
+            var xmlpath = PathFor("MusicBrainz.xml");
+            var doc = XDocument.Load(xmlpath);
+            var response = new RestResponse { Content = doc.ToString() };
+
+            var d = new XmlAttributeDeserializer();
+            var output = d.Deserialize<MTB.Worker.MB.MBResponseRelease>(response);
 
         }
         [Fact]

@@ -24,6 +24,20 @@ namespace RestSharp.Tests.SampleClasses
         public int Count { get; set; }
         [DeserializeAs(Name = "image-large")]
         public List<image> Images { get; set; }
+        public string ListName { get; set; }
+    }
+
+    public class InlineListSample2
+    {
+
+        public int Count { get; set; }
+        public List<ImageLarge> Images { get; set; }
+    }
+
+    public class ImageLarge
+    {
+        public string Src { get; set; }
+        public string Value { get; set; }
     }
 
     public class NestedListSample

@@ -195,19 +195,28 @@ namespace RestSharp.Deserializers
 				}
 				else if (type == typeof(Guid))
 				{
-					value = new Guid(value.ToString());
+					var raw = value.ToString();
+					value = string.IsNullOrEmpty(raw) ? Guid.Empty : new Guid(value.ToString());
 					prop.SetValue(x, value, null);
 				}
+                else if (type == typeof(TimeSpan))
+                {
+                    var timeSpan = XmlConvert.ToTimeSpan(value.ToString());
+                    prop.SetValue(x, timeSpan, null);
+                }
 				else if (type.IsGenericType)
 				{
 					var t = type.GetGenericArguments()[0];
 					var list = (IList)Activator.CreateInstance(type);
 
 					var container = GetElementByName(root, name);
-					var first = container.Elements().FirstOrDefault();
+					if (container != null && container.HasElements)
+					{
+						var first = container.Elements().FirstOrDefault();
 
-					var elements = container.Elements().Where(d => d.Name == first.Name);
-					PopulateListFromElements(t, elements, list);
+						var elements = container.Elements(first.Name);
+						PopulateListFromElements(t, elements, list);
+					}
 
 					prop.SetValue(x, list, null);
 				}
@@ -321,7 +330,8 @@ namespace RestSharp.Deserializers
 				}
 				else
 				{
-                    if (!(element.IsEmpty || element.HasElements)) // || element.HasAttributes))
+                    //if (!(element.IsEmpty || element.HasElements)) || element.HasAttributes))
+                    if (!element.HasElements)
                     {
                         val = element.Value;
                     }

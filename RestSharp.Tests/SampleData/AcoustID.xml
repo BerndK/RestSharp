@@ -33,11 +33,7 @@
                       <name>Various Artists</name>
                     </artist>
                   </artists>
-                  <date>
-                    <month>7</month>
-                    <day>28</day>
-                    <year>2008</year>
-                  </date>
+                  <date />
                   <medium_count>2</medium_count>
                   <id>11de51d7-32c0-4f8b-8df8-1dce7e65245f</id>
                 </release>
