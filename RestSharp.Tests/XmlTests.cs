@@ -594,6 +594,17 @@ namespace RestSharp.Tests
 
         }
         [Fact]
+        public void Can_Deserialize_MusicBrainz2_Xml()
+        {
+            var xmlpath = PathFor("MusicBrainz2.xml");
+            var doc = XDocument.Load(xmlpath);
+            var response = new RestResponse { Content = doc.ToString() };
+
+            var d = new XmlAttributeDeserializer();
+            var output = d.Deserialize<MTB.Worker.MB.MBResponseRelease>(response);
+
+        }
+        [Fact]
 		public void Can_Deserialize_Boolean_From_Number()
 		{
 				var xmlpath = PathFor("boolean_from_number.xml");

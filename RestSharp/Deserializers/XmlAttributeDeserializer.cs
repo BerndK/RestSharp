@@ -55,7 +55,7 @@ namespace RestSharp.Deserializers
 				RemoveNamespace(doc);
 			}
 
-            var x = Activator.CreateInstance<T>();
+			var x = Activator.CreateInstance<T>();
 			var objType = x.GetType();
 
 			if (objType.IsSubclassOfRawGeneric(typeof(List<>)))
@@ -115,17 +115,17 @@ namespace RestSharp.Deserializers
 					if (type.IsGenericType)
 					{
 						var genericType = type.GetGenericArguments()[0];
-                        
-                        string subElemName = genericType.Name;
+						
+						string subElemName = genericType.Name;
 
-                        if (options != null && !string.IsNullOrEmpty(options.Name))
-                            subElemName = options.Name;
-                        else
-                        {
-                            var genTypeAttr = genericType.GetAttribute<DeserializeAsAttribute>();
-                            if (genTypeAttr != null)
-                                subElemName = genTypeAttr.Name ?? subElemName;
-                        }
+						if (options != null && !string.IsNullOrEmpty(options.Name))
+							subElemName = options.Name;
+						else
+						{
+							var genTypeAttr = genericType.GetAttribute<DeserializeAsAttribute>();
+							if (genTypeAttr != null)
+								subElemName = genTypeAttr.Name ?? subElemName;
+						}
 
 						var first = GetElementByName(root, subElemName);
 						if (first != null)
@@ -135,7 +135,7 @@ namespace RestSharp.Deserializers
 							var list = (IList)Activator.CreateInstance(type);
 							PopulateListFromElements(genericType, elements, list);
 							prop.SetValue(x, list, null);
-                            continue; //skip the other List implementation (see below)
+							continue; //skip the other List implementation (see below)
 						}
 					}
 					//continue;
@@ -144,68 +144,71 @@ namespace RestSharp.Deserializers
 				// check for nullable and extract underlying type
 				if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>))
 				{
-                    // if the value is empty, set the property to null...
-                    if (value == null || String.IsNullOrEmpty(value.ToString()))
-                    {
-                        prop.SetValue(x, null, null);
-                        continue;
-                    }
-                    type = type.GetGenericArguments()[0];
-				}
-
-				if (type == typeof(bool))
-				{
-					var toConvert = value.ToString().ToLower();
-					prop.SetValue(x, XmlConvert.ToBoolean(toConvert), null);
-				}
-				else if (type.IsPrimitive)
-				{
-					prop.SetValue(x, value.ChangeType(type, Culture), null);
-				}
-				else if (type.IsEnum)
-				{
-					var converted = type.FindEnumValue(value.ToString(), Culture);
-					prop.SetValue(x, converted, null);
-				}
-				else if (type == typeof(Uri))
-				{
-					var uri = new Uri(value.ToString(), UriKind.RelativeOrAbsolute);
-					prop.SetValue(x, uri, null);
-				}
-				else if (type == typeof(string))
-				{
-					prop.SetValue(x, value, null);
-				}
-				else if (type == typeof(DateTime))
-				{
-					if (DateFormat.HasValue())
+					// if the value is empty, set the property to null...
+					if (value == null || String.IsNullOrEmpty(value.ToString()))
 					{
-						value = DateTime.ParseExact(value.ToString(), DateFormat, Culture);
+						prop.SetValue(x, null, null);
+						continue;
 					}
-					else
-					{
-						value = DateTime.Parse(value.ToString(), Culture);
-					}
-
-					prop.SetValue(x, value, null);
+					type = type.GetGenericArguments()[0];
 				}
-				else if (type == typeof(Decimal))
-				{
-					value = Decimal.Parse(value.ToString(), Culture);
-					prop.SetValue(x, value, null);
-				}
-				else if (type == typeof(Guid))
-				{
-					var raw = value.ToString();
-					value = string.IsNullOrEmpty(raw) ? Guid.Empty : new Guid(value.ToString());
-					prop.SetValue(x, value, null);
-				}
-                else if (type == typeof(TimeSpan))
+                if (value != null)
                 {
-                    var timeSpan = XmlConvert.ToTimeSpan(value.ToString());
-                    prop.SetValue(x, timeSpan, null);
+                    if (type == typeof(bool))
+                    {
+                        var toConvert = value.ToString().ToLower();
+                        prop.SetValue(x, XmlConvert.ToBoolean(toConvert), null);
+                    }
+                    else if (type.IsPrimitive)
+                    {
+                        prop.SetValue(x, value.ChangeType(type, Culture), null);
+                    }
+                    else if (type.IsEnum)
+                    {
+                        var converted = type.FindEnumValue(value.ToString(), Culture);
+                        prop.SetValue(x, converted, null);
+                    }
+                    else if (type == typeof(Uri))
+                    {
+                        var uri = new Uri(value.ToString(), UriKind.RelativeOrAbsolute);
+                        prop.SetValue(x, uri, null);
+                    }
+                    else if (type == typeof(string))
+                    {
+                        prop.SetValue(x, value, null);
+                    }
+                    else if (type == typeof(DateTime))
+                    {
+                        if (DateFormat.HasValue())
+                        {
+                            value = DateTime.ParseExact(value.ToString(), DateFormat, Culture);
+                        }
+                        else
+                        {
+                            value = DateTime.Parse(value.ToString(), Culture);
+                        }
+
+                        prop.SetValue(x, value, null);
+                    }
+                    else if (type == typeof(Decimal))
+                    {
+                        value = Decimal.Parse(value.ToString(), Culture);
+                        prop.SetValue(x, value, null);
+                    }
+                    else if (type == typeof(Guid))
+                    {
+                        var raw = value.ToString();
+                        value = string.IsNullOrEmpty(raw) ? Guid.Empty : new Guid(value.ToString());
+                        prop.SetValue(x, value, null);
+                    }
+                    else if (type == typeof(TimeSpan))
+                    {
+                        var timeSpan = XmlConvert.ToTimeSpan(value.ToString());
+                        prop.SetValue(x, timeSpan, null);
+                    }
                 }
-				else if (type.IsGenericType)
+
+				if (type.IsGenericType)
 				{
 					var t = type.GetGenericArguments()[0];
 					var list = (IList)Activator.CreateInstance(type);
@@ -344,15 +347,15 @@ namespace RestSharp.Deserializers
 				}
 				else
 				{
-                    //if (!(element.IsEmpty || element.HasElements)) || element.HasAttributes))
-                    if (!element.HasElements)
-                    {
-                        val = element.Value;
-                    }
-                    else
-                    {
-                        val = element;
-                    }
+					//if (!(element.IsEmpty || element.HasElements)) || element.HasAttributes))
+					if (!element.HasElements)
+					{
+						val = element.Value;
+					}
+					else
+					{
+						val = element;
+					}
 				}
 			}
 

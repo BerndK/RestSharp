@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://musicbrainz.org/ns/mmd-2.0#">
+  <release id="23327653-dc43-4f0f-a39d-1e9ce71fdc3f">
+    <title>Bravo Hits 74</title>
+    <status>Official</status>
+    <packaging>Jewel Case</packaging>
+    <quality>normal</quality>
+    <text-representation>
+      <language>deu</language>
+      <script>Latn</script>
+    </text-representation>
+    <artist-credit>
+      <name-credit>
+        <artist id="89ad4ac3-39f7-470e-963a-56509c546377">
+          <name>Various Artists</name>
+          <sort-name>Various Artists</sort-name>
+          <disambiguation>add compilations to this artist</disambiguation>
+        </artist>
+      </name-credit>
+    </artist-credit>
+    <release-group type="Compilation" id="cb24578e-1ab0-485a-a844-bdcaca42fbb3">
+      <title>Bravo Hits 74</title>
+      <first-release-date>2011-07-29</first-release-date>
+    </release-group>
+    <date>2011-07-29</date>
+    <country>DE</country>
+    <barcode>0600753351444</barcode>
+    <asin>B005775NWQ</asin>
+    <label-info-list count="1">
+      <label-info>
+        <label id="7fdf4b1f-37fb-4d5e-9445-b17b0a6930e4">
+          <name>Polystar</name>
+          <sort-name>Polystar</sort-name>
+          <disambiguation>Germany</disambiguation>
+          <label-code>4324</label-code>
+        </label>
+      </label-info>
+    </label-info-list>
+    <medium-list count="2">
+      <medium>
+        <position>1</position>
+        <track-list count="22" offset="0">
+          <track>
+            <position>1</position>
+            <length>195000</length>
+            <recording id="c01c5f5d-7b31-4b17-8a39-399de70fc258">
+              <title>Mr. Saxobeat</title>
+            </recording>
+          </track>
+          <track>
+            <position>2</position>
+            <length>264000</length>
+            <recording id="e64a87ed-45a1-4522-a946-5b9b8e2e0541">
+              <title>Party Rock Anthem</title>
+            </recording>
+          </track>
+          <track>
+            <position>3</position>
+            <length>232000</length>
+            <recording id="4cd75f7e-7278-4d20-85c6-0f085b3fd278">
+              <title>Last Friday Night (T.G.I.F.)</title>
+            </recording>
+          </track>
+          <track>
+            <position>4</position>
+            <length>199000</length>
+            <recording id="f3425122-28f1-485e-9031-b78d90fbd175">
+              <title>Danza Kuduro</title>
+            </recording>
+          </track>
+          <track>
+            <position>5</position>
+            <length>247000</length>
+            <recording id="5b34745f-45e4-478a-bb73-34b477848628">
+              <title>Dirty Dancer</title>
+            </recording>
+          </track>
+          <track>
+            <position>6</position>
+            <length>254000</length>
+            <recording id="c1a2db8e-5178-4325-aa18-6eca1ac17165">
+              <title>Give Me Everything</title>
+            </recording>
+          </track>
+          <track>
+            <position>7</position>
+            <length>208000</length>
+            <recording id="9beb6b62-aca7-4794-88c2-b994a28228f8">
+              <title>Don't Wanna Go Home</title>
+            </recording>
+          </track>
+          <track>
+            <position>8</position>
+            <length>320000</length>
+            <recording id="36119119-c128-4c87-bdc8-83af13021534">
+              <title>The Edge of Glory</title>
+              <length>321000</length>
+            </recording>
+          </track>
+          <track>
+            <position>9</position>
+            <length>197000</length>
+            <recording id="e2e55748-3461-40c1-b46b-dd1d0c90583b">
+              <title>Sweat</title>
+            </recording>
+          </track>
+          <track>
+            <position>10</position>
+            <length>238000</length>
+            <recording id="38733353-f53f-40e4-8455-c82a4cf6bf2d">
+              <title>Free</title>
+            </recording>
+          </track>
+          <track>
+            <position>11</position>
+            <length>207000</length>
+            <recording id="03099f8d-2e30-4687-8071-198cc5887fc6">
+              <title>If I Was You (Omg)</title>
+            </recording>
+          </track>
+          <track>
+            <position>12</position>
+            <length>197000</length>
+            <recording id="a3f00996-d1e1-44a7-86de-23654a7e1a91">
+              <title>Where Them Girls At</title>
+              <length>194000</length>
+            </recording>
+          </track>
+          <track>
+            <position>13</position>
+            <length>211000</length>
+            <recording id="e35814e3-de62-45a4-8c01-a211e84f3839">
+              <title>Beautiful People</title>
+            </recording>
+          </track>
+          <track>
+            <position>14</position>
+            <length>204000</length>
+            <recording id="39beed6c-cbdf-4a5f-8727-426eb19c9f75">
+              <title>Weightless</title>
+            </recording>
+          </track>
+          <track>
+            <position>15</position>
+            <length>230000</length>
+            <recording id="7568627a-1434-4ee2-a07a-0a9b44066db1">
+              <title>Could It Be You (Punk Rock Chick)</title>
+            </recording>
+          </track>
+          <track>
+            <position>16</position>
+            <length>211000</length>
+            <recording id="18cabd19-45d4-4a7a-9bd7-eff33d1f230d">
+              <title>I Wanna Go</title>
+            </recording>
+          </track>
+          <track>
+            <position>17</position>
+            <length>227000</length>
+            <recording id="66214a86-9d07-488b-885b-bcde1a3bf044">
+              <title>San Francisco</title>
+              <length>226000</length>
+            </recording>
+          </track>
+          <track>
+            <position>18</position>
+            <length>175000</length>
+            <recording id="da47f04c-7e8c-4899-a9a5-0b9df5c8b0ac">
+              <title>Bad Behaviour</title>
+            </recording>
+          </track>
+          <track>
+            <position>19</position>
+            <title>Don't Stop the Party</title>
+            <length>242000</length>
+            <recording id="ec11a16a-df07-4261-b797-bcfc6c4e3736">
+              <title>DonÂ¿t Stop The Party</title>
+            </recording>
+          </track>
+          <track>
+            <position>20</position>
+            <length>171000</length>
+            <recording id="c86d66a8-c76c-409e-bcdd-0f43b84e75a9">
+              <title>Rabiosa</title>
+            </recording>
+          </track>
+          <track>
+            <position>21</position>
+            <length>204000</length>
+            <recording id="8df6456e-fd15-43c6-bc02-a1316206ca02">
+              <title>The Bomb</title>
+            </recording>
+          </track>
+          <track>
+            <position>22</position>
+            <length>172000</length>
+            <recording id="cf7d43b5-044f-4ebd-be15-159820128569">
+              <title>Hi-A Ma (Pata Pata)</title>
+            </recording>
+          </track>
+        </track-list>
+      </medium>
+      <medium>
+        <position>2</position>
+        <track-list count="21" offset="0">
+          <track>
+            <position>1</position>
+            <title>Nur noch kurz die Welt retten</title>
+            <length>193000</length>
+            <recording id="54615b3a-ebde-4855-83cc-d7b558c526e6">
+              <title>Nur noch kurz die Welt retten  </title>
+              <length>193000</length>
+            </recording>
+          </track>
+          <track>
+            <position>2</position>
+            <title>Little in the Middle</title>
+            <length>182000</length>
+            <recording id="5e353aee-37dd-4a31-a9f4-26b778bc30b0">
+              <title>Little In The Middle</title>
+            </recording>
+          </track>
+          <track>
+            <position>3</position>
+            <title>Something in the Water</title>
+            <length>180000</length>
+            <recording id="3bfcbac8-c5b5-4db0-b608-95c09d497765">
+              <title>Something In The Water</title>
+            </recording>
+          </track>
+          <track>
+            <position>4</position>
+            <length>190000</length>
+            <recording id="07f731ff-86cf-4df3-bd9e-f9dbe0b49c16">
+              <title>The Lazy Song</title>
+            </recording>
+          </track>
+          <track>
+            <position>5</position>
+            <length>252000</length>
+            <recording id="a1e93c24-0d41-474f-b266-cd8ab1e76909">
+              <title>California King Bed</title>
+              <length>251026</length>
+            </recording>
+          </track>
+          <track>
+            <position>6</position>
+            <length>201000</length>
+            <recording id="3d74f332-44d4-4eec-bb86-301484a38194">
+              <title>I'm Into You</title>
+            </recording>
+          </track>
+          <track>
+            <position>7</position>
+            <length>223000</length>
+            <recording id="46655f6b-3e36-4305-a988-6996190c3a10">
+              <title>Price Tag</title>
+            </recording>
+          </track>
+          <track>
+            <position>8</position>
+            <length>208000</length>
+            <recording id="089fad65-a0fe-4ccd-abe8-deb52aee67bd">
+              <title>Pretty Girl Rock</title>
+            </recording>
+          </track>
+          <track>
+            <position>9</position>
+            <length>210000</length>
+            <recording id="dea4a5d2-d60d-403c-8f95-3dac8a3ad850">
+              <title>I Miss You</title>
+            </recording>
+          </track>
+          <track>
+            <position>10</position>
+            <length>209000</length>
+            <recording id="83580c6e-7534-4500-bd3b-b5cd831475e1">
+              <title>Tanz</title>
+            </recording>
+          </track>
+          <track>
+            <position>11</position>
+            <length>231000</length>
+            <recording id="fefd099a-9a44-442b-b84b-f2ae1cd2fa01">
+              <title>Nur in meinem Kopf</title>
+              <length>229000</length>
+            </recording>
+          </track>
+          <track>
+            <position>12</position>
+            <title>Brighter Than the Sun</title>
+            <length>231000</length>
+            <recording id="5d0e7030-fee0-4f63-b777-ae5c987c0d27">
+              <title>Brighter Than The Sun</title>
+            </recording>
+          </track>
+          <track>
+            <position>13</position>
+            <title>Pocketful of Sunshine</title>
+            <length>202000</length>
+            <recording id="5da5f597-db39-484f-8887-135b3a22b35f">
+              <title>Pocketful Of Sunshine</title>
+            </recording>
+          </track>
+          <track>
+            <position>14</position>
+            <length>212000</length>
+            <recording id="c4ae0743-ca02-46c4-afcd-072e8973dc2c">
+              <title>Better Than Love</title>
+              <length>212000</length>
+            </recording>
+          </track>
+          <track>
+            <position>15</position>
+            <length>241000</length>
+            <recording id="0cc2a083-ca13-43e1-a5f1-7fe2a6dd22f4">
+              <title>Boom Boom Boom</title>
+            </recording>
+          </track>
+          <track>
+            <position>16</position>
+            <length>214000</length>
+            <recording id="92cac0f4-ff1f-4098-9fcf-3e73f438b6df">
+              <title>Way Back Home</title>
+            </recording>
+          </track>
+          <track>
+            <position>17</position>
+            <length>243000</length>
+            <recording id="e061d01d-bc12-41d9-aef4-ded7d72ac680">
+              <title>Every Teardrop Is a Waterfall</title>
+            </recording>
+          </track>
+          <track>
+            <position>18</position>
+            <length>214000</length>
+            <recording id="1f3a786e-8ab0-49e7-b7e0-f82393b58d0d">
+              <title>Punching in a Dream</title>
+              <length>238000</length>
+            </recording>
+          </track>
+          <track>
+            <position>19</position>
+            <length>193000</length>
+            <recording id="72c1f052-b66a-435f-8cd3-acbbe4f37554">
+              <title>Rock Me</title>
+            </recording>
+          </track>
+          <track>
+            <position>20</position>
+            <title>So perfekt</title>
+            <length>222000</length>
+            <recording id="7c32b5f6-4801-4bc9-b25e-f78a6b67a06f">
+              <title>So Perfekt</title>
+            </recording>
+          </track>
+          <track>
+            <position>21</position>
+            <length>274000</length>
+            <recording id="cd27acd1-f84f-44db-8026-44c0db05b7ef">
+              <title>Shotgun</title>
+            </recording>
+          </track>
+        </track-list>
+      </medium>
+    </medium-list>
+    <relation-list target-type="url">
+      <relation type="amazon asin">
+        <target>http://www.amazon.de/gp/product/B005775NWQ</target>
+      </relation>
+    </relation-list>
+  </release>
+</metadata>

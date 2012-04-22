@@ -153,6 +153,9 @@
     <Content Include="SampleData\MusicBrainz.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="SampleData\MusicBrainz2.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="SampleData\NestedListSample.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
